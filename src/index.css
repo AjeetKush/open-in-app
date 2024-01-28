@@ -5,6 +5,7 @@
 .container {
   display: flex;
   font-family: 'Lato', sans-serif;
+  
 }
 
 .sidebar {
@@ -42,41 +43,10 @@
   z-index: 6; /* Set a higher z-index for Vector to make it cover Ellipse */
 }
 
-.base-text {
-  color: #FFFFFF; /* White color for the text */
-  position: absolute;
-  top: calc(50% + 40px); /* Adjust this value so BASE appears below the logo */
-  transform: translate(-50%, -50%) ; /* Center and unskew the text */
-  width: 205px;
-  height: 88px;
-  top: 462.37px;
-  left: 196.33px;
-
-  font-family: Montserrat, sans-serif;
-  font-size: 72px;
-  font-weight: 700;
-  line-height: 88px;
-  letter-spacing: 0em;
-  text-align: left;
 
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  z-index: 7; /* Above the skewed background but below the logo */
-}
 
 
-.social-links {
-  display: flex;
-  justify-content: space-between;
-  width: 299px;
-  height: 48px;
-  position: absolute;
-  top: 909px;
-  left: 144.5px;
-  z-index: 8;
-}
 
 .container {
   background: #F8FAFF;
@@ -105,15 +75,7 @@
   left: 813.18px;
 }
 
-.auth-buttons {
-  position: absolute;
-  top: 338.51px;
-  left: 813.18px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between; /* Change this to space-between */
-  align-items: end;
-}
+
 
 .google-auth, .apple-auth {
   width: 197.6px;
@@ -138,17 +100,6 @@
   flex-direction: column;
 }
 
-.login-form {
-  width: 422.64px;
-  height: 390.8px;
-  position: absolute;
-  top: 398.88px;
-  left: 813.18px;
-  border-radius: 10px;
-  /* border: 1px solid #999999; */
-  background-color: white;
-  
-}
 
 .email-label, .password-label {
   color: #000000;
@@ -165,20 +116,13 @@
   background-color: #EAEAEA;
 }
 
-.forgot-password {
-  color: #346BD4;
-}
 
-.sign-in-button {
-  width: 356.77px;
-  height: 43.91px;
-}
+
 
 .register-prompt {
-  width: 286.51px;
-  height: 20.86px;
+  margin-top: 20px;  
   text-align: center;
-  background: linear-gradient(0deg, #346BD5, #346BD5), linear-gradient(0deg, #858585, #858585);
+
 }
 
 .register-link {
@@ -208,20 +152,24 @@ body, html {
   display: flex;
   flex-direction: column;
   height: 100vh;
+  align-items: center;
+  
+
 }
 
 .page-header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  padding: 0 248px; /* Adjust padding as needed */
-  box-sizing: border-box;
-  position: absolute;
-  top: 0;
-  left: 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+width: 80vw;
+margin: 50px 50px 30px 0 ;
+
+/* width:800px; */
 }
 
+.page-header > h1{
+  margin-left: 30px;
+}
 .title {
   font-size: 24px;
   color: #333;
@@ -241,14 +189,7 @@ body, html {
   background-repeat: no-repeat;
 }
 
-.profile-icon {
-  width: 30px;
-  height: 30px;
-  /* background: url('path-to-profile-icon.svg'); Replace with the actual path to your profile icon */
-  background-size: contain;
-  background-repeat: no-repeat;
-  border-radius: 50%; /* Assuming the profile picture is circular */
-}
+
 
 /* Add the rest of your styles for content, input-container, upload-area, and upload-button as previously defined */
 
@@ -261,51 +202,20 @@ body, html {
 
 /* Include the rest of the styles for input-container, upload-area, and upload-button as previously defined */
 
-.input-container {
-  width: 596px;
-  height: 367px;
-  position: absolute;
-  top: 218px;
-  left: 518px;
-  border-radius: 8px;
-  overflow: hidden;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
 
-.upload-area {
-  width: 100%;
-  height: calc(100% - 56px - 16px); /* Subtract button height and button top margin */
-  border: 2px dashed #000;
-  border-radius: 8px 8px 0 0; /* Top corners rounded */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  padding: 16px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column;
-}
+
+
 
 .upload-button {
-  width: 564px;
-  height: 56px;
-  margin-top: 16px;
-  padding: 8px 16px;
-  border-radius: 8px;
-  background-color: #605BFF;
-  color: white;
-  border: none;
-  cursor: pointer;
-  outline: none;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  gap: 8px;
-  font-size: 16px;
+width: 85%;
+margin: 20px 0;
+padding: 15px;
+border-radius: 10px;
+color: white;
+border: 1px solid transparent;
+background: #605BFF;
+
+
 }
 
 .upload-button-new{
@@ -351,26 +261,21 @@ body, html {
 
 .menu-container {
   width: 218px;
-  height: 1047px;
-  position: relative;
-  top: -1px;
   background-color: #FFFFFF;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-end;
+  padding: 0 20px;
+  
   font-family: 'Nunito', sans-serif;
 }
 
 .logo-section {
   display: flex;
   align-items: center;
-  margin-top: 50px; /* Adjust top spacing */
+  margin: 50px 30px 30px 0 ;
 }
 
-.base-icon {
-  width: 42px;
-  height: 42px;
-}
 
 .base-title {
   font-size: 24px;
@@ -384,7 +289,8 @@ body, html {
   width: 100%;
   display: flex;
   align-items: center;
-  padding: 10px 0; /* Adjust padding as needed */
+  padding: 10px 0; 
+  margin: 10px 0;
 }
 
 .menu-item img {
@@ -400,6 +306,7 @@ body, html {
 /* Additional style for active menu item */
 .menu-item.active {
   background-color: #E8E8E8; /* Active item background color */
+  background: none;
 }
 
 /* now Upload File Table css */
@@ -505,4 +412,144 @@ body, html {
 
 .link a:hover {
   text-decoration: underline;
+}
+
+
+.left-side{
+  background-color: #605BFF;
+  height: 100vh;
+  width: 50%;
+  transform-origin: top left;
+  transform: skew(-10deg);
+  position: relative;
+}
+
+.logo {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  transform-origin: top left;
+  transform: skew(10deg);
+}
+
+.base-text {
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    top: 300px;
+    transform-origin: top left;
+    transform: skew(10deg);
+    position: relative;
+}
+
+.social-links {
+  display: flex;
+  bottom: 0;
+  justify-content: space-evenly;
+  left :40%;
+  position: absolute;  
+  
+}
+.icon{
+  margin:10px
+}
+.right-side{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  margin-left: 80px;
+}
+.main-content{
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.main-content >h1{
+  font-size: 36px;
+  font-weight: 700;
+  margin-top: 5px;
+  margin-bottom: 5px;
+
+}
+.main-content > p{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 10px;
+  margin-bottom: 5px;
+
+
+}
+.auth-buttons {
+ display: flex;
+ margin-top: 30px;
+}
+
+.login-form {
+margin-top: 25px;
+border-radius: 20px;
+  padding: 30px;
+  background-color: #FFFFFF;
+  width: 100%;
+}
+
+.inputs{
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+
+.forgot-password {
+  color: #346BD4;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 10px;
+}
+
+
+.sign-in-button {
+width: 100%;
+padding: 10px;
+border-radius: 10px;
+background: #605BFF;
+color: white;
+border:1px solid transparent;
+margin-top: 10px;
+}
+
+.label{
+  font-size: 16px;
+  font-weight: 300;
+  margin-bottom: 5px;
+}
+
+.label-input{
+  background: #F5F5F5;
+border-radius: 10px;
+border:1px solid transparent;
+/* width: 80%; */
+height: 40px;
+}
+
+.input-container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 600px;
+  height: 300px;
+  top: 100px;
+  position: relative;
+  background: white;
+  padding: 30px 10px;
+  border-radius: 20px;
+}
+
+.upload-area {
+  border:1px dashed black;
+  border-radius: 20px;
+  padding: 100px;
 }

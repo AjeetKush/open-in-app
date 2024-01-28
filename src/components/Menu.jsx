@@ -7,7 +7,7 @@ import ScheduleIcon from "../assets/Schedule.svg";
 import CalendarIcon from "../assets/Calendar.svg";
 import NotificationIcon from "../assets/Notification.svg";
 import SettingIcon from "../assets/Setting.svg";
-import Icon from "../assets/Icon.svg"
+import Icon from "../assets/Icon.svg";
 
 const Menu = () => {
   return (
